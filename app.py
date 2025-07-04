@@ -24,11 +24,11 @@ def get_temperatures():
 def get_concentrations():
     mab = request.args.get('mAb')
     temp = request.args.get('temperature')
-    print(f"[DEBUG] Get concentrations for: mAb={mab}, temp={temp}")
-    print(df['Temperature'].unique())
-    print(df['Temperature'].apply(type).unique())
+    # print(f"[DEBUG] Get concentrations for: mAb={mab}, temp={temp}")
+    # print(df['Temperature'].unique())
+    # print(df['Temperature'].apply(type).unique())
     filtered = df[(df['mAb']==mab)&(df['Temperature'] == temp)]
-    print(f"[DEBUG] Filtered rows:\n{filtered}")
+    # print(f"[DEBUG] Filtered rows:\n{filtered}")
 
     concs = filtered['Concentration'].unique().tolist()
     return jsonify(sorted(concs))
@@ -55,7 +55,6 @@ def result():
         (df['Chemical Stress'] == stress)
     ]
 
-    # Assume only one row matches
     kinetic_model = df_filtered['Kinetic model'].values[0]
     k_value = df_filtered['K'].values[0]
     k_unit = df_filtered['units'].values[0]
