@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Antibody Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding: 8px;
+            background: #ecf0f1;
+            border-radius: 8px;
+        }
+
+        .highlight-box {
+            background: #dff9fb;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .highlight-box p {
+            font-size: 1.2rem;
+            margin: 8px 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .back-link:hover {
+            background: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧬 Antibody Degradation Result</h1>
+
+        <h2>📋 Selected Conditions</h2>
+        <ul>
+            <li><strong>Antibody:</strong> {{ mab }}</li>
+            <li><strong>Temperature:</strong> {{ temp }}</li>
+            <li><strong>Concentration:</strong> {{ conc }}</li>
+            <li><strong>Chemical Stress:</strong> {{ stress }}</li>
+        </ul>
+
+        <div class="highlight-box">
+            <h2>⚗️ Preferred Kinetic Model</h2>
+            <p><strong>Model:</strong> {{ kinetic_model }}</p>
+
+            <h2>📈 Reaction Rate Constant</h2>
+            <p><strong>k:</strong> {{ k_value }} <em>{{ k_unit }}</em></p>
+        </div>
+
+        <a class="back-link" href="/">← Back to Dashboard</a>
+    </div>
+</body>
+</html>

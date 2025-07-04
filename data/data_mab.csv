@@ -1,0 +1,41 @@
+mAb,Temperature,Concentration,Chemical Stress,Kinetic model,K,units
+IgG1,4,1 mg/ml,0.1 M NaCl with Citrate Buffer,Second Order Kinetics,1.06E-02,(mg/ml)⁻¹.(day)⁻¹
+IgG1,4,1 mg/ml,0.1 M NaCl with Acetate Buffer,Second Order Kinetics,7.80E-03,(mg/ml)⁻¹.(day)⁻¹
+IgG1,4,1 mg/ml,0.1 M NaCl with Glycine Buffer,Second Order Kinetics,5.90E-03,(mg/ml)⁻¹.(day)⁻¹
+IgG1,30,1 mg/ml,0.1 M NaCl with Citrate Buffer,Second Order Kinetics,8.02E-02,(mg/ml)⁻¹.(day)⁻¹
+IgG1,30,1 mg/ml,0.1 M NaCl with Acetate Buffer,Second Order Kinetics,7.20E-02,(mg/ml)⁻¹.(day)⁻¹
+IgG1,30,1 mg/ml,0.1 M NaCl with Glycine Buffer,Second Order Kinetics,6.53E-02,(mg/ml)⁻¹.(day)⁻¹
+Trastuzumab,40,1 mg/ml,UV Exposure,First Order Kinetics,9.70E-03,min-1
+Trastuzumab,40,1 mg/ml,0.1% H2O2,First Order Kinetics,1.97E-02,min-1
+Trastuzumab,40,1 mg/ml,0.25 mM Fe²⁺,First Order Kinetics,3.00E-02,min-1
+Trastuzumab,40,1 mg/ml,0.1 U BML,First Order Kinetics,4.00E-03,min-1
+Trastuzumab,40,1 mg/ml,0.01% NaOCl,First Order Kinetics,1.20E-02,min-1
+anti-HER2,30,1 mg/ml,Citrate Buffer,First Order Kinetics,4.60E-03,min-1
+anti-HER2,30,1 mg/ml,0.1 M NaCl with Citrate Buffer,First Order Kinetics,6.00E-03,min-1
+anti-HER2,30,1 mg/ml,0.1 M NaCl with Acetate Buffer,First Order Kinetics,6.30E-03,min-1
+anti-HER2,30,1 mg/ml,0.1 M NaCl with Glycine Buffer,First Order Kinetics,5.20E-03,min-1
+anti-HER2,30,1 mg/ml,PBS,First Order Kinetics,2.10E-03,min-1
+anti-HER2,30,1 mg/ml,UV Exposure and PBS,First Order Kinetics,8.50E-03,min-1
+anti-CD6,30,1 mg/ml,Citrate Buffer,First Order Kinetics,4.00E-03,min-1
+anti-CD6,30,1 mg/ml,0.1 M NaCl with Citrate Buffer,First Order Kinetics,6.50E-03,min-1
+anti-CD6,30,1 mg/ml,0.1 M NaCl with Acetate Buffer,First Order Kinetics,6.20E-03,min-1
+anti-CD6,30,1 mg/ml,0.1 M NaCl with Glycine Buffer,First Order Kinetics,5.00E-03,min-1
+anti-HER2,30,10 mg/ml,0.1 M NaCl with Acetate Buffer,First Order Kinetics,8.80E-03,min-1
+anti-HER2,30,10 mg/ml,0.1 M NaCl with Glycine Buffer,First Order Kinetics,7.50E-03,min-1
+anti-HER2,50,21 mg/ml,Histidine HCl ,First Order Kinetics,1.00E-02,min-1
+anti-HER2,30,21 mg/ml,Histidine HCl ,First Order Kinetics,1.20E-02,min-1
+IgG1,5,25-100 mg/mL,Histidine HCl ,First Order Kinetics,6.13E-05,month-1
+IgG1,25,25-100 mg/mL,Histidine HCl ,First Order Kinetics,2.38E-04,month-1
+IgG1,40,25-100 mg/mL,Histidine HCl ,First Order Kinetics,7.46E-04,month-1
+ADC,5,<25 mg/mL,Acetate Buffer,First Order Kinetics,9.44E-04,month-1
+ADC,25,<25 mg/mL,Acetate Buffer,First Order Kinetics,4.11E-03,month-1
+IgG1,40,1 mg/ml,Citrate Buffer,Second Order Kinetics,8.02E-02,(mg/ml)⁻¹.(day)⁻¹
+IgG1,40,1 mg/ml,Acetate Buffer,Second Order Kinetics,7.20E-02,(mg/ml)⁻¹.(day)⁻¹
+IgG1,40,1 mg/ml,Glycine Buffer,Second Order Kinetics,6.53E-02,(mg/ml)⁻¹.(day)⁻¹
+IgG1,25,1 mg/ml,Citrate Buffer,Second Order Kinetics,1.06E-02,(mg/ml)⁻¹.(day)⁻¹
+IgG1,25,1 mg/ml,Acetate Buffer,Second Order Kinetics,7.80E-02,(mg/ml)⁻¹.(day)⁻¹
+IgG1,25,1 mg/ml,Glycine Buffer,Second Order Kinetics,5.90E-03,(mg/ml)⁻¹.(day)⁻¹
+IgG1,40,10 g/ml,Citrate Buffer,Second Order Kinetics,4.21E-02,(mg/ml)⁻¹.(day)⁻¹
+IgG1,40,10 mg/ml,Acetate Buffer,Second Order Kinetics,3.85E-02,(mg/ml)⁻¹.(day)⁻¹
+IgG1,40,50 mg/ml,Citrate Buffer,Second Order Kinetics,1.87E-02,(mg/ml)⁻¹.(day)⁻¹
+IgG2,40,1 mg/ml,Histidine,Second Order Kinetics,5.50E-02,(mg/ml)⁻¹.(day)⁻¹

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mAb Selection Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #f9f9f9;
+        }
+
+        select:disabled {
+            background-color: #e0e0e0;
+        }
+
+        button[type="submit"] {
+            margin-top: 30px;
+            width: 100%;
+            padding: 12px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:disabled {
+            background-color: #a5b1c2;
+            cursor: not-allowed;
+        }
+
+        button[type="submit"]:hover:enabled {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧬 Select Monoclonal Antibody</h1>
+
+        <form id="selection-form" method="POST" action="/result">
+            <label for="mab-select">Antibody:</label>
+            <select id="mab-select" required>
+                <option value="">-- Select Antibody --</option>
+            </select>
+
+            <label for="temp-select">Temperature:</label>
+            <select id="temp-select" disabled required>
+                <option value="">-- Select Temperature --</option>
+            </select>
+
+            <label for="conc-select">Concentration:</label>
+            <select id="conc-select" disabled required>
+                <option value="">-- Select Concentration --</option>
+            </select>
+
+            <label for="stress-select">Chemical Stress:</label>
+            <select id="stress-select" disabled required>
+                <option value="">-- Select Stress --</option>
+            </select>
+
+            <!-- Hidden inputs to submit final values -->
+            <input type="hidden" name="mab" id="mab-hidden">
+            <input type="hidden" name="temperature" id="temp-hidden">
+            <input type="hidden" name="concentration" id="conc-hidden">
+            <input type="hidden" name="stress" id="stress-hidden">
+
+            <button type="submit" id="submit-btn" disabled>🔍 View Results</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+</body>
+</html>
